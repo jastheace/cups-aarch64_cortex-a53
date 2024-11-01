@@ -1,94 +1,36 @@
-Package: cups-bsd
-Version: 2.4.11-r1
-Depends: libc, libcups
-Section: net
-URL: http://www.cups.org/
-Architecture: aarch64_cortex-a53
-Installed-Size: 276480
-Filename: cups-bsd_2.4.11-r1_aarch64_cortex-a53.ipk
-Size: 17293
-SHA256sum: 6b5d5291638983fae2a4ff50659c1feeb65ddc7ce50aa75ae16cdc83dd9be8e5
-Description:  Common UNIX Printing System - BSD commands (old)
-
-Package: cups-client
-Version: 2.4.11-r1
-Depends: libc, libcups, libcupsimage
-Section: net
-URL: http://www.cups.org/
-Architecture: aarch64_cortex-a53
-Installed-Size: 808960
-Filename: cups-client_2.4.11-r1_aarch64_cortex-a53.ipk
-Size: 127472
-SHA256sum: 037226ce425853f56c3b9d61b30f635331aa8a08f4b3fc70d5e6534e971d9954
-Description:  Common UNIX Printing System - Client commands
-
-Package: cups-ppdc
-Version: 2.4.11-r1
-Depends: libc, libcups, libjpeg, libpng, libstdcpp6, zlib
-Section: net
-URL: http://www.cups.org/
-Architecture: aarch64_cortex-a53
-Installed-Size: 604160
-Filename: cups-ppdc_2.4.11-r1_aarch64_cortex-a53.ipk
-Size: 140056
-SHA256sum: 1d62b4e8651e134ef769a01c044250bb95d5aa578ba8b042587842e94f281791
-Description:  Common UNIX Printing System - PPDC utils
-
 Package: cups
 Version: 2.4.11-r1
-Depends: libc, libcups, libcupsimage, libusb-1.0-0, libstdcpp6, libopenldap
+Depends: libc, zlib, libusb-1.0-0, libopenssl3, libgnutls, libavahi-client, libavahi-dbus-support, libpng, libjpeg, libstdcpp6
 Section: net
 URL: http://www.cups.org/
 Architecture: aarch64_cortex-a53
-Installed-Size: 7884800
+Installed-Size: 9543680
 Filename: cups_2.4.11-r1_aarch64_cortex-a53.ipk
-Size: 4770684
-SHA256sum: d8d04984ab8e83523ff3f7f8d90b238acf3039352e34f9da8229c670e7df0889
+Size: 5138400
+SHA256sum: b2938dd4995c4f7711aecac7bf1c524fba52d9a0bee1a03bb86a9d0dcd19bba6
 Description:  Common UNIX Printing System (daemon)
 
-Package: ghostscript-fonts-std
-Version: 8.11-r1
-Depends: libc, fontconfig
-Section: fonts
-Architecture: aarch64_cortex-a53
-Installed-Size: 4935680
-Filename: ghostscript-fonts-std_8.11-r1_aarch64_cortex-a53.ipk
-Size: 3753487
-SHA256sum: ca66e5c7a05461fb53a3120e4067a181852e3050b7a575c79e777fae305bf335
-Description:  Ghostscript, standard fonts.
-
-Package: ghostscript-gnu-gs-fonts-other
-Version: 6.0-r1
-Depends: libc, fontconfig
-Section: fonts
-Architecture: aarch64_cortex-a53
-Installed-Size: 1556480
-Filename: ghostscript-gnu-gs-fonts-other_6.0-r1_aarch64_cortex-a53.ipk
-Size: 819644
-SHA256sum: 4048a39d95bf2ed7767ce6364020813954046348092487ce03b62e9e2c8a1f80
-Description:  Ghostscript, the 'other' standard fonts.
-
 Package: ghostscript
-Version: 10.02.1-r1
-Depends: libc, cups, libcupsimage, libfreetype, fontconfig, libtiff6, libjpeg, libpng, libexpat, lcms2, zlib, ghostscript-fonts-std
+Version: 10.04.0-r1
+Depends: libc, cups, libfreetype, fontconfig, libtiff6, libjpeg, libpng, libexpat, lcms2, zlib, libjbigkit
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 55060480
-Filename: ghostscript_10.02.1-r1_aarch64_cortex-a53.ipk
-Size: 23941880
-SHA256sum: a3c081309132f6324910f223f23c12e0733db3d928da3ea212d8a35fa6d45830
+Installed-Size: 53852160
+Filename: ghostscript_10.04.0-r1_aarch64_cortex-a53.ipk
+Size: 23593846
+SHA256sum: fd6c114eb931d4a927bc9508b1c6e8e14a7fe12044cfe885da24a3e6f4cc22f8
 Description:  Ghostscript, an interpreter for the PostScript language and for PDF.
 
 Package: gutenprint-cups
-Version: 5.3.4-2023-11-22T01-00-5d76cb06-r1
-Depends: libc, cups, libcupsimage, libiconv-full2, ghostscript
+Version: 5.3.4-2024-06-25T13-20-6665bfaa-r1
+Depends: libc, cups, libiconv-full2, ghostscript
 Section: net
 URL: http://gimp-print.sourceforge.net/
 Architecture: aarch64_cortex-a53
 Installed-Size: 25425920
-Filename: gutenprint-cups_5.3.4-2023-11-22T01-00-5d76cb06-r1_aarch64_cortex-a53.ipk
-Size: 4918056
-SHA256sum: 5583121437d3ec72c4219198000ec5f0fb8e9ce0a6d506a6495d99f90576ac56
+Filename: gutenprint-cups_5.3.4-2024-06-25T13-20-6665bfaa-r1_aarch64_cortex-a53.ipk
+Size: 4927781
+SHA256sum: 812e9ad6e764bc02fb5ebf4f0cd733f42773f3bd4078a4161c86b1de0855ae1e
 Description:  Gutenprint CUPS drivers for a wide range of Canon, Epson, HP and
  compatible printers.
 
@@ -100,172 +42,19 @@ URL: http://www.littlecms.com/
 Architecture: aarch64_cortex-a53
 Installed-Size: 1638400
 Filename: lcms2_2.15-r1_aarch64_cortex-a53.ipk
-Size: 466722
-SHA256sum: 6a8b6f0e5339b3a656a8ddeae2b2bc56872338e014ae0c02fba3af7f9e3f80b6
+Size: 466665
+SHA256sum: 442defb5290c0db971ec490850abfa1076533f6d82a832ed21b799fcdd0f6708
 Description:  Little CMS color engine
 
-Package: libavahi-dbus-support
-Version: 0.8-r9
-Depends: libc, dbus
-Provides: libavahi
-License: LGPL-2.1-or-later
-Section: libs
-URL: http://www.avahi.org/
-CPE-ID: cpe:/a:avahi:avahi
-Architecture: aarch64_cortex-a53
-Installed-Size: 348160
-Filename: libavahi-dbus-support_0.8-r9_aarch64_cortex-a53.ipk
-Size: 113861
-SHA256sum: 5ed61363e41a4d7319f47c2b310a87d39e8cf92b14b68e0dd9e71d7f73087b29
-Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
- implementation (library). It facilitates
- service discovery on a local network -- this means that
- you can plug your laptop or computer into a network and
- instantly be able to view other people who you can chat with,
- find printers to print to or find files being shared.
- This kind of technology is already found in MacOS X
- (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
- and is very convenient.
- .
- The libavahi package contains the mDNS/DNS-SD shared libraries,
- used by other programs. Specifically, it provides
- libavahi-core and libavahi-common libraries.
- .
- The libavahi-dbus-support package enables
- D-Bus support in avahi, needed to support
- the libavahi-client library and avahi-utils.
- .
- Selecting this package modifies the build configuration
- so that avahi packages are built with support for D-BUS enabled;
- it does not generate a separate binary of its own.
- It also automatically adds the D-Bus package to the build.
- libavahi-dbus-support is selected automatically if you select
- libavahi-client or avahi-utils.
-
-Package: libcairo
-Version: 1.17.4-r1
-Depends: libc, libpng, libfreetype, fontconfig, pixman, glib2, libjpeg, zlib, liblzo2
-License: LGPL-2.1-or-later MPL-1.1
-Section: libs
-URL: https://cairo.freedesktop.org/
-Architecture: aarch64_cortex-a53
-Installed-Size: 1392640
-Filename: libcairo_1.17.4-r1_aarch64_cortex-a53.ipk
-Size: 525263
-SHA256sum: 95853a0c88622f1ec04abca390d081d162fea0ab9c7f7d95f4b23f33acaf7f1b
-Description:  Cairo is a 2D graphics library with support for multiple output devices.
-
-Package: libcups
-Version: 2.4.11-r1
-Depends: libc, zlib, libpthread, libpng, libjpeg, libusb-1.0-0, libgnutls, libavahi, libavahi-dbus-support
-Section: libs
-URL: http://www.cups.org/
-Architecture: aarch64_cortex-a53
-Installed-Size: 727040
-Filename: libcups_2.4.11-r1_aarch64_cortex-a53.ipk
-Size: 275738
-SHA256sum: 00c5f2da5ae70b022dc0ed199ee631aa98395b775992a6a4fc7c46c72a6c9c40
-Description:  Common UNIX Printing System - Core library
-
-Package: libcupsimage
-Version: 2.4.11-r1
-Depends: libc, libcups
-Section: libs
-URL: http://www.cups.org/
-Architecture: aarch64_cortex-a53
-Installed-Size: 71680
-Filename: libcupsimage_2.4.11-r1_aarch64_cortex-a53.ipk
-Size: 2864
-SHA256sum: 3555b6939aee9c62f2d8b1a00725ec25c42fb333ff0e35d8edd4defc22e11b85
-Description:  Common UNIX Printing System - Image library
-
-Package: liberation-fonts
-Version: 2.1.5-r1
-Depends: libc, fontconfig
-Section: fonts
-Architecture: aarch64_cortex-a53
-Installed-Size: 4372480
-Filename: liberation-fonts_2.1.5-r1_aarch64_cortex-a53.ipk
-Size: 2350437
-SHA256sum: e3e555d08599d4f1e0e6eb7c0ae25e77abd4dde229d644cbbc423568c8ba5684
-Description:  The Liberation(tm) Fonts is a font family which aims at metric compatibility
- with Arial, Times New Roman, and Courier New. It is sponsored by Red Hat
-
-Package: libijs
-Version: 0.35-r1
+Package: libjbigkit
+Version: 2.1-r1
 Depends: libc
 Section: libs
+URL: http://freecode.com/projects/jbigkit/
 Architecture: aarch64_cortex-a53
-Installed-Size: 184320
-Filename: libijs_0.35-r1_aarch64_cortex-a53.ipk
-Size: 27222
-SHA256sum: 31091966f5df54c2829ff9c672ca524d7a7009094b028d9d8bb33b100d1b42d7
-Description:  IJS raster image transport protocol
-
-Package: libpcre
-Version: 8.41-r2
-Depends: libc
-License: BSD-3-Clause
-Section: libs
-URL: http://www.pcre.org/
-Architecture: aarch64_cortex-a53
-Installed-Size: 337920
-Filename: libpcre_8.41-r2_aarch64_cortex-a53.ipk
-Size: 101508
-SHA256sum: e815e8c5d0c39922952bc62652eccb7a910f714dd16706d2b45df1614a3c643b
-Description:  A Perl Compatible Regular Expression library
-
-Package: openprinting-cups-filters
-Version: 1.28.15-r2
-Depends: libc, cups, libcupsimage, fontconfig, libijs, libtiff6, libjpeg, libpng, poppler, qpdf, glib2, poppler, libdbus
-Section: Net
-URL: https://www.openprinting.org
-Architecture: aarch64_cortex-a53
-Installed-Size: 4249600
-Filename: openprinting-cups-filters_1.28.15-r2_aarch64_cortex-a53.ipk
-Size: 1025945
-SHA256sum: fd0418cb4c98159083bfb6173d9668eb2163a210dd6fdac62c7c87f4e6ad9cb9
-Description:  CUPS filters maintained by OpenPrinting.
- The CUPS Filters package contains backends, filters and other software that was once part of the core CUPS distribution but is no longer maintained by Apple Inc.
-
-Package: poppler
-Version: 0.90.0-r1
-Depends: libc, libpng, libtiff6, libjpeg, zlib, lcms2, fontconfig, libpthread, libfreetype, libstdcpp6, libcairo, glib2, libintl-full8, curl, libnss, nspr
-Section: utils
-URL: http://poppler.freedesktop.org/
-Architecture: aarch64_cortex-a53
-Installed-Size: 4771840
-Filename: poppler_0.90.0-r1_aarch64_cortex-a53.ipk
-Size: 1381336
-SHA256sum: 7155162b7736b4c78e4177229faf2708018694d924c0eb9f2397f0a1bd2c84f3
-Description:  Poppler is a PDF rendering library based on the xpdf-3.0 code base.
-
-Package: qpdf
-Version: 11.6.3-r1
-Depends: libc, libpcre, zlib, libstdcpp6, libatomic1, libopenssl3, libgnutls, libjpeg-turbo
-Section: utils
-URL: http://qpdf.sourceforge.net/
-Architecture: aarch64_cortex-a53
-Installed-Size: 12759040
-Filename: qpdf_11.6.3-r1_aarch64_cortex-a53.ipk
-Size: 2972104
-SHA256sum: f10c70e49386836e5a1c6b2e770fcd4130d8bc3f256f65b130187a8c5a5f2353
-Description:  QPDF is a command-line program that does structural, content-preserving
- transformations on PDF files. It could have been called something like pdf-to-pdf.
- It also provides  many useful capabilities to developers of PDF-producing software
- or for people who just want to look at the innards of a PDF file to learn more
- about how they work.
-
-Package: ubuntu-fonts
-Version: 0.83-r1
-Depends: libc, fontconfig
-Section: fonts
-Architecture: aarch64_cortex-a53
-Installed-Size: 4392960
-Filename: ubuntu-fonts_0.83-r1_aarch64_cortex-a53.ipk
-Size: 2161787
-SHA256sum: 6096480c3590f069fcc7401a2ab89fcc77265233426369af4451ad0e57498319
-Description:  The Ubuntu typeface has been specially created to complement the Ubuntu tone of
- voice. It has a contemporary style and contains characteristics unique to the
- Ubuntu brand that convey a precise, reliable and free attitude.
+Installed-Size: 153600
+Filename: libjbigkit_2.1-r1_aarch64_cortex-a53.ipk
+Size: 30508
+SHA256sum: 0c45357807099133980849f150ef2e9bd094cb863e47e9ef69e3f3d91f10b72d
+Description:  JBIG-KIT implements a highly effective data compression algorithm for bi-level high-resolution images such as fax pages or scanned documents. This package provides JBIG-KIT C libraries of compression and decompression functions
 
