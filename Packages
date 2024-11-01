@@ -6,8 +6,8 @@ URL: http://www.cups.org/
 Architecture: aarch64_cortex-a53
 Installed-Size: 9543680
 Filename: cups_2.4.11-r1_aarch64_cortex-a53.ipk
-Size: 5138400
-SHA256sum: b2938dd4995c4f7711aecac7bf1c524fba52d9a0bee1a03bb86a9d0dcd19bba6
+Size: 5138334
+SHA256sum: f75cdeaf05e24bc1065728f6fdf3f27782d634e01943f750703cdea47a07d635
 Description:  Common UNIX Printing System (daemon)
 
 Package: ghostscript
@@ -17,8 +17,8 @@ Section: net
 Architecture: aarch64_cortex-a53
 Installed-Size: 53852160
 Filename: ghostscript_10.04.0-r1_aarch64_cortex-a53.ipk
-Size: 23593846
-SHA256sum: fd6c114eb931d4a927bc9508b1c6e8e14a7fe12044cfe885da24a3e6f4cc22f8
+Size: 23593951
+SHA256sum: 3768f9e87c28063fe3409ac72fe5f491521383ba3606fad5d46509c49fc465f7
 Description:  Ghostscript, an interpreter for the PostScript language and for PDF.
 
 Package: gutenprint-cups
@@ -46,6 +46,19 @@ Size: 466665
 SHA256sum: 442defb5290c0db971ec490850abfa1076533f6d82a832ed21b799fcdd0f6708
 Description:  Little CMS color engine
 
+Package: libcairo
+Version: 1.17.4-r1
+Depends: libc, libpng, libfreetype, fontconfig, pixman, glib2, libjpeg, zlib, liblzo2
+License: LGPL-2.1-or-later MPL-1.1
+Section: libs
+URL: https://cairo.freedesktop.org/
+Architecture: aarch64_cortex-a53
+Installed-Size: 1392640
+Filename: libcairo_1.17.4-r1_aarch64_cortex-a53.ipk
+Size: 525271
+SHA256sum: 9632cdbe796f1822de5b906791e3057b0302d06d510b579feaf3e523fc22e940
+Description:  Cairo is a 2D graphics library with support for multiple output devices.
+
 Package: libjbigkit
 Version: 2.1-r1
 Depends: libc
@@ -57,4 +70,58 @@ Filename: libjbigkit_2.1-r1_aarch64_cortex-a53.ipk
 Size: 30508
 SHA256sum: 0c45357807099133980849f150ef2e9bd094cb863e47e9ef69e3f3d91f10b72d
 Description:  JBIG-KIT implements a highly effective data compression algorithm for bi-level high-resolution images such as fax pages or scanned documents. This package provides JBIG-KIT C libraries of compression and decompression functions
+
+Package: libpcre
+Version: 8.41-r2
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+URL: http://www.pcre.org/
+Architecture: aarch64_cortex-a53
+Installed-Size: 337920
+Filename: libpcre_8.41-r2_aarch64_cortex-a53.ipk
+Size: 101519
+SHA256sum: 2c257b510635fa264365d6c236492d11077bda2fb8150f2e6a2e545a203279a3
+Description:  A Perl Compatible Regular Expression library
+
+Package: openprinting-cups-filters
+Version: 1.28.15-r2
+Depends: libc, cups, fontconfig, libtiff6, libjpeg, libpng, glib2, libdbus, libexif, qpdf, poppler
+Section: Net
+URL: https://www.openprinting.org
+Architecture: aarch64_cortex-a53
+Installed-Size: 4249600
+Filename: openprinting-cups-filters_1.28.15-r2_aarch64_cortex-a53.ipk
+Size: 1025677
+SHA256sum: 296303013926aa623bfc68a63cfbcb43bc037a1897529a3e6d7b7da4a0a5bafd
+Description:  CUPS filters maintained by OpenPrinting.
+ The CUPS Filters package contains backends, filters and other software that was once part of the core CUPS distribution but is no longer maintained by Apple Inc.
+
+Package: poppler
+Version: 0.90.0-r1
+Depends: libc, libpng, libtiff6, libjpeg, zlib, lcms2, fontconfig, libpthread, libfreetype, libstdcpp6, libcairo, glib2, libintl-full8, curl, libnss, nspr
+Section: utils
+URL: http://poppler.freedesktop.org/
+Architecture: aarch64_cortex-a53
+Installed-Size: 4771840
+Filename: poppler_0.90.0-r1_aarch64_cortex-a53.ipk
+Size: 1381556
+SHA256sum: 2f0bad75b4c337190375a9aa74e33228aecd07f0112d85fbbc5623b61700e44e
+Description:  Poppler is a PDF rendering library based on the xpdf-3.0 code base.
+
+Package: qpdf
+Version: 11.6.3-r1
+Depends: libc, libpcre, zlib, libstdcpp6, libatomic1, libopenssl3, libgnutls, libjpeg-turbo
+Section: utils
+URL: http://qpdf.sourceforge.net/
+Architecture: aarch64_cortex-a53
+Installed-Size: 12759040
+Filename: qpdf_11.6.3-r1_aarch64_cortex-a53.ipk
+Size: 2972025
+SHA256sum: 51a1b65eb732e2454ed6dece6a1a652a4689a840466b3bb8cebd1797f4028628
+Description:  QPDF is a command-line program that does structural, content-preserving
+ transformations on PDF files. It could have been called something like pdf-to-pdf.
+ It also provides  many useful capabilities to developers of PDF-producing software
+ or for people who just want to look at the innards of a PDF file to learn more
+ about how they work.
 

@@ -1,1 +1,1 @@
-{"architecture": "aarch64_cortex-a53", "packages":{"cups": "2.4.11-r1", "ghostscript": "10.04.0-r1", "gutenprint-cups": "5.3.4-2024-06-25T13-20-6665bfaa-r1", "lcms2": "2.15-r1", "libjbigkit": "2.1-r1"}}
+{"architecture": "aarch64_cortex-a53", "packages":{"cups": "2.4.11-r1", "ghostscript": "10.04.0-r1", "gutenprint-cups": "5.3.4-2024-06-25T13-20-6665bfaa-r1", "lcms2": "2.15-r1", "libcairo": "1.17.4-r1", "libjbigkit": "2.1-r1", "libpcre": "8.41-r2", "openprinting-cups-filters": "1.28.15-r2", "poppler": "0.90.0-r1", "qpdf": "11.6.3-r1"}}
